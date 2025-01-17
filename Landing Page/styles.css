@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+header .signin-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+header .signin-btn:hover {
+    background-color: #e50914;
+    border-color: #e50914;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(90deg, red, black);
+    background-size: 400% 400%;
+    animation: backgroundGradient 5s infinite ease-in-out;
+    color: white;
+}
+
+@keyframes backgroundGradient {
+    0% {
+        background: linear-gradient(90deg, red, black);
+    }
+    50% {
+        background: linear-gradient(90deg, black, red);
+    }
+    100% {
+        background: linear-gradient(90deg, red, black);
+    }
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+#subscription-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#subscription-form input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+#subscription-form button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+#subscription-form button:hover {
+    background-color: #f40612;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    background-color: #181818;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #141414;
+    color: white;
+    background: linear-gradient(90deg, red, black);
+    background-size: 400% 400%;
+    animation: backgroundGradient 5s infinite ease-in-out;
+}
+
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.feature div {
+    flex: 1;
+}
+
+.feature h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 80%;
+    }
+}
+
+
+/* Footer */
+footer {
+    padding: 20px 50px;
+    text-align: center;
+    background-color: #000;
+    background: linear-gradient(90deg, red, black);
+    background-size: 400% 400%;
+    animation: backgroundGradient 5s infinite ease-in-out;
+    color: white;
+}
+
+@keyframes backgroundGradient {
+    0% {
+        background: linear-gradient(90deg, red, black);
+    }
+    50% {
+        background: linear-gradient(90deg, black, red);
+    }
+    100% {
+        background: linear-gradient(90deg, red, black);
+    }
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .links a {
+    color: #757575;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

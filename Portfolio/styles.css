@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: black; /* Updated background color */
+  color: white;          /* Updated text color */
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* About Section */
+.about {
+  font-family: 'Calibri', sans-serif;  /* Added Calibri font */
+  background: #444;   /* Changed background to black */
+  padding: 40px 0;
+  color: white;       /* Updated text color to white */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Projects Section */
+.projects, .certifications, .hackathons {
+  padding: 40px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.projects.visible, .certifications.visible, .hackathons.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-grid, .hackathon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card, .hackathon-card {
+  background: #444;  /* Updated background color */
+  border: 1px solid #555;  /* Adjusted border color */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Certifications Section */
+.certifications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.certifications ul li {
+  background: #7a43bd;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Connect Section */
+.connect {
+  background: #333;   /* Changed background to black */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.connect .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7a43bd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.connect .btn:hover {
+  background: #7a43bd;
+}
+
+/* Footer */
+footer {
+  background: #222;  /* Updated background to a darker shade */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Adding animation on scroll */
+.scroll-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.scroll-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

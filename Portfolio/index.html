@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - P. Charmi Reddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero" style="background-image: url('images/Charmi Reddy.jpg');">
+    <div class="container">
+      <h1>P. Charmi Reddy</h1>
+      <p>AI/ML Enthusiast | Developer | Problem Solver</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m P. Charmi Reddy, an enthusiastic AI/ML enthusiast driven by a passion for solving real-world problems through technology. 
+        Pursuing my B.Tech in Artificial Intelligence and Machine Learning at Kommuri Pratap Reddy Institute of Technology, 
+        I constantly strive to push the boundaries of what can be achieved using cutting-edge AI and machine learning techniques.
+      </p>
+      <p>
+        My journey involves hands-on experience in developing projects like AI chatbots, Clothes Management Systems, 
+        and advanced data visualization solutions. These experiences have honed my skills in problem-solving, programming, and collaboration.
+      </p>
+      <p>
+        In addition to my technical expertise, I have earned multiple certifications from esteemed institutions such as Wadhwani Foundation, 
+        Microsoft, and Infosys. These certifications have further strengthened my understanding of key concepts in AI/ML, data analytics, and soft skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>AI Chatbot</h3>
+          <p>A chatbot designed to answer questions about C programming.</p>
+        </div>
+        <div class="project-card">
+          <h3>Clothes Management System</h3>
+          <p>Python-based app suggesting outfits based on size and style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Professionalism Certificate - Wadhwani Foundation</li>
+        <li>Explore Gen AI and Copilots - Microsoft</li>
+        <li>Effective Speaking and Learning Skills - Wadhwani Foundation</li>
+        <li>Fundamentals of Generative AI - Microsoft</li>
+        <li>MongoDB Certification</li>
+        <li>Leading for Success - Infosys</li>
+        <li>Data Visualization with Excel - YHills</li>
+        <li>Introduction to NLP - Infosys Springboard</li>
+        <li>Introduction to Deep Learning - Infosys Springboard</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hackathons Section -->
+  <section id="hackathons" class="hackathons">
+    <div class="container">
+      <h2>Hackathons</h2>
+      <div class="hackathon-list">
+        <div class="hackathon-card">
+          <h3>Vultr Cloud Innovative Hackathon</h3>
+          <p>Through problem-solving, teamwork, and creativity, we developed innovative solutions in a competitive environment.</p>
+        </div>
+        <div class="hackathon-card">
+          <h3>AI FUSION TEST</h3>
+          <p>Worked on real-world projects and competed in collaborative coding challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect" class="connect">
+    <div class="container">
+      <h2>Connect with Me</h2>
+      <p>If you'd like to collaborate or know more about me, connect with me on:</p>
+      <a href="https://www.linkedin.com/in/p-charmi-reddy-b2aaa2294/" class="btn" target="_blank">Visit My LinkedIn Profile</a>
+      <a href="https://github.com/Codingcodercodes" class="btn" target="_blank">Visit My GitHub</a>
+      <a href="https://x.com/PCharmiReddy" class="btn" target="_blank">Visit My X Account</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 P. Charmi Reddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Adding JavaScript for scroll animation -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionVisible = window.innerHeight / 1.5;
+
+        if (sectionTop < sectionVisible) {
+          section.classList.add('visible');
+        } else {
+          section.classList.remove('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
